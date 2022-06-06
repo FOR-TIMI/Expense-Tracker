@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Expense tracker</title>
+</head>
+     <body>
+      <div class="container ">
+           <h1 class="text-center display-2 text-primary"><b>Expense Tracker</b></h1>
+           <h2 class="text-center ">Add a new item:</h2>
+
+           <form>
+          <div class=" row mb-3">
+         
+               <div class="col-sm-12 d-inline">
+                 <input type="text" class="form-control form-control-lg" id="expense" placeholder="Where was the expense made?">
+               </div>
+             </div>
+             <div class="row">
+               <div class="col">
+               <label for="dateInput"  class="form-control col col-form-label col-form-label-lg"><b>Date:<input type="date" id="dateInput" class="form-control form-control-lg" placeholder="Date"></b> </label>
+                 
+               </div>
+               <div class="col mb-3">
+          
+                <label for="amountInput"  class="form-control col col-form-label col-form-label-lg"><b>Amount:<input type="text" id="amountInput" class="form-control form-control-lg" placeholder="Amount"></b> </label>
+                 
+               </div>
+             </div>
+             <button id="addBtn" class="btn btn-primary text-center btn-lg mb-5">Add Expense</button>
+          </form>
+          <div>
+
+
+
+                                                                 <section>
+          <table class="table table-striped table-hover">
+               <thead id="thead">
+                 <tr>
+                   <th id="name" scope="col">Expense</th>
+                   <th id="date" scope="col">Date</th>
+                   <th id="Amount" scope="col">Amount</th>
+                   <th id="sth" scope="col">#</th>
+                 </tr>
+               </thead>
+               <tbody id="tbody"> 
+               </tbody>
+               <tfoot>
+                <tr>
+                  <th  scope="col"></th>
+                   <th  scope="col"></th>
+                  
+
+                   <th  scope="col"></th>
+                </tr>
+              </tfoot>
+             </table>
+          </div>
+      </div>
+     </section>
+
+
+          <script src="app.js"></script>
+     </body>
+</html>
